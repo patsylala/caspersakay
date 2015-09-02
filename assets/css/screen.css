@@ -644,7 +644,7 @@ margin on the iframe, cause it breaks stuff. */
     border: transparent 1px solid;
     color: #fff;
     text-align: center;
-    font-family: "Museo-sans";
+    font-family: "Museo-sans", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     border-radius: 3px;
@@ -827,8 +827,8 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
-    font-weight: 100;
-    font-family: "Museo-sans", serif;
+    font-weight: 300;
+    font-family: "Museo-sans", sans-serif;
     letter-spacing: 0.01rem;
     color: #fff;
 }
