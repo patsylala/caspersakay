@@ -670,6 +670,10 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow:0 1px 2px #aaa;
 }
 
+.realpost-header .subscribecontainer {
+    position: absolute;
+}
+
 .blog-title a {
     text-decoration: none;
     color: #fff;
@@ -1648,8 +1652,12 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    .realpost-header .blog-title {
+    font-size: 3rem;
+    }
+
     .subscribecontainer {
-        position: inherit;
+        right: 11px;
     }
 
     .bg-container {
@@ -1671,6 +1679,10 @@ body:not(.post-template) .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40%;
+    }
+
+    .main-header .inner {
+        margin-top: 70px;
     }
 
     .no-cover.main-header {
