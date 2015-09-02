@@ -632,13 +632,13 @@ margin on the iframe, cause it breaks stuff. */
   100% { transform: translateX(-30px) translateY(-30px) scale(1.5); opacity: 0; }
 }
 
-.subscribecontainer {
+.websitecontainer {
     position: absolute;
     right: 31px;
     top: 0;
 }
 
-.subscribe-button {
+.website-button {
     padding: 15px;
     padding-bottom: 11px;
     border: transparent 1px solid;
@@ -653,11 +653,11 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 }
 
-.subscribe-button:hover {
+.website-button:hover {
     background: #fff;
 }
 
-.subscribe-button:before {
+.website-button:before {
     font-size: 9px;
     margin-right: 6px;
 }
@@ -670,7 +670,7 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow:0 1px 2px #aaa;
 }
 
-.realpost-header .subscribecontainer {
+.realpost-header .websitecontainer {
     position: absolute;
 }
 
@@ -1656,7 +1656,7 @@ body:not(.post-template) .post-title {
     font-size: 3rem;
     }
 
-    .subscribecontainer {
+    .websitecontainer {
         right: 11px;
     }
 
