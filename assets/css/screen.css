@@ -453,7 +453,7 @@ margin on the iframe, cause it breaks stuff. */
 .inner {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -853,7 +853,7 @@ margin on the iframe, cause it breaks stuff. */
 .post {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 800px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
@@ -981,6 +981,16 @@ body:not(.post-template) .post-title {
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
+
+.post-excerpt img, .post-excerpt embed, .post-excerpt iframe { 
+    max-width: 100%; 
+    width: 100%;
+}
+
+.post-content img, .post-content embed, .post-content iframe { 
+    max-width: 100%; 
+    width: 100%;
+}
 
 .post-template .post-header {
    margin-bottom: 3.4rem;
@@ -1347,7 +1357,7 @@ body:not(.post-template) .post-title {
 .pagination {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 800px;
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
@@ -1465,12 +1475,54 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
-
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
    ========================================================================== */
+@media only screen and (max-width: 1440px) {
+
+    #jeep {
+        left: 41%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #jeep {
+        left: 39%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #jeep {
+        left: 37%;
+    }
+
+}
 
 @media only screen and (max-width: 900px) {
+
+    .bg-container {
+        display: none;
+    }
+
+    .city-bg {
+        display: none;
+    }
+
+    #jeep {
+        position: inherit;
+        width: 100%;
+        height: 144px;
+        margin-top: -50px;
+        margin-left: 22px;
+    }
+
+    #jeep svg {
+        width: 200px;
+    }
 
     .main-nav {
         padding: 15px;
@@ -1486,8 +1538,8 @@ body:not(.post-template) .post-title {
         box-sizing: border-box;
         height: auto;
         min-height: 240px;
-        height: 60%;
-        padding: 15% 0;
+        max-height: 22%;
+        padding: 0;
     }
 
     .scroll-down,
@@ -1595,6 +1647,26 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    .subscribecontainer {
+        position: inherit;
+    }
+
+    .bg-container {
+        display: none;
+    }
+
+    .city-bg {
+        display: none;
+    }
+
+    #jeep {
+        position: inherit;
+        width: 100%;
+        height: 144px;
+        margin-top: -50px;
+        margin-left: 22px;
+    }
 
     .main-header {
         margin-bottom: 15px;
