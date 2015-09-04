@@ -5,11 +5,15 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="realpost-header">
+    <header class="real-post-header">
         <span class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></span>
-        <div class="subscribecontainer">
-        <a class="website-button" href="http://www.sakay.ph/">Sakay.ph</a>
+        <h2 class="page-description">{{@blog.description}}</h2>
+        <div class="website-container">
+            <a class="website-button" href="http://www.sakay.ph/">Sakay.ph</a>
         </div>
+        <div id="jeep">
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 180 100"><g id="container" style="transform: translateY(-1px);"><g id="chassis" fill="#fff"><path d="M112.986 20.661h5.131l-1.208-3.924h-83.112l-2.414 3.924h5.72l-8.512 14.562h-20.159s-3.562-.428-3.562 3.623l-.02 10.168-.002-.004h-3.953v6.236c0 1.453 1.16 2.639 2.604 2.639l1.3-.012c.424-7.383 7.459-13.237 14.851-13.237 7.396 0 14.406 5.854 14.85 13.226l48.934-.021c.442-7.347 7.457-13.2 14.849-13.2 7.393 0 14.389 5.84 14.852 13.2h4.95v-21.647h-5.098v-15.533zm-61.796 24.069l-12.7.021-5.573-9.528 8.513-14.562h21.524v15.596c-2.743.284-8.503 1.704-11.764 8.473zm16.593-8.536v-15.533h40.373v15.533h-40.373zM40.575 10.114c0-2.152-1.745-3.896-3.898-3.896v7.792c2.153 0 3.898-1.745 3.898-3.896z"/></g><g id="wheels" fill="#fff"><path d="M19.437 46.7c-6.894 0-12.492 5.669-12.492 12.635 0 6.999 5.597 12.665 12.492 12.665 6.924 0 12.523-5.666 12.523-12.665 0-6.966-5.599-12.635-12.523-12.635zm.003 18.14c-2.999 0-5.409-2.464-5.409-5.505 0-3.004 2.41-5.468 5.409-5.468 3.008 0 5.421 2.463 5.421 5.468-.004 3.041-2.413 5.505-5.421 5.505zM98.049 46.7c-6.895 0-12.492 5.669-12.492 12.635 0 6.999 5.595 12.665 12.492 12.665 6.924 0 12.521-5.666 12.521-12.665 0-6.966-5.597-12.635-12.521-12.635zm.002 18.14c-2.998 0-5.408-2.464-5.408-5.505 0-3.004 2.41-5.468 5.408-5.468 3.01 0 5.422 2.463 5.422 5.468-.004 3.041-2.412 5.505-5.422 5.505z"/><circle id="circle1" cx="125" cy="60" r="5" fill="#fff" /><circle id="circle2" cx="125" cy="60" r="5" fill="#fff" /></g></svg>
+         </div>
     </header>
 
     <section class="author-profile inner">
